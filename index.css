@@ -1,0 +1,145 @@
+
+#image img{
+    max-width: 100%;
+    height: auto;
+    border: 10px solid mistyrose;
+}
+/* global styling */
+body{
+    background-color: #C57E78;
+    
+}
+h1{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color:#FFCECA;
+    font-size: 30px;
+}
+h2{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color:#FFCECA;
+    padding-top: 80px;
+    font-size: 40px;
+}
+
+.toggle{
+    display: none;
+    
+}
+
+a{
+    font-size: 20px;
+    color:#FFCECA;
+    font-size:18px;
+}
+
+a:hover{
+    font-size: 20px;
+    color:mistyrose;
+    text-decoration: none;
+}
+
+
+/* nav styling */
+
+.navbar-wrapper{
+    /* position:fixed; */
+    width: 100%;
+    
+   
+    
+}
+
+.navbar-wrapper ul{
+    background-color: #b4676d;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  
+}
+.navbar-wrapper ul li {
+    list-style: none;
+    color:#FFCECA;
+    font-size: 17px;
+    
+
+}
+
+
+/* .navbar-wrapper ul li:hover {
+    background: #894944;
+} */
+.icon-a{
+    flex: 10 1;
+  
+}
+.icon-b {
+    flex: 2 1;
+}
+.icon-c{
+    flex: 2 1;
+   
+}
+/*mobile resizing and toggling the nav*/
+@media all and (max-width:1000px){
+    .navbar-wrapper{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        
+    }
+    .navbar-wrapper ul{
+        display:none;
+        
+        
+    }
+
+    .navbar-wrapper.open{
+        height: 200px;
+        background-color:#b4676d;
+    }
+    .navbar-wrapper ul.open{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 130px;
+        
+        
+    
+    }
+
+
+    .navbar-wrapper ul li{
+        flex-basis: 100%;
+        flex-grow: 1;
+        padding-top: 10px;
+        padding-bottom:10px;
+    }
+
+    .toggle{
+        display: block;
+        color:#FFCECA;
+        padding-top:30px;
+    }
+}
+/*button styling*/
+.wrapper{
+ 
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*div color E5A5A0 */
+.btn{
+    background-color: #894944;
+    color: mistyrose;
+}
+.footer{
+    text-align: center;
+    padding: 20px;
+}
